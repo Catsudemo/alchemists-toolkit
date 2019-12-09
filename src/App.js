@@ -12,10 +12,13 @@ const pm = new PotionMaster(1);
 const options = pm.components();
 
 
+var selectionList = []
+
 ///this isnt working
-const conditions = {
-    maxAdditives: (list, id) => {return []}
-}
+// const conditions = {
+//     isWorking: (list, id) => console.log("this function has been run"),
+//     getSelections: (list, id) => { selectionList = list }
+// }
 
 function App() {
     return (
@@ -27,24 +30,20 @@ function App() {
           <div name="picker">
             <ComponentPicker 
             options={options} 
-            conditions={conditions} />
+            callbackFunction={(selections)=>selectionList = selections}
+
+
+             />
           </div>
         </Layout>
         <div
           key="nglkivcdfufejkuejcferefjvhlvgcjt"
-          onClick={e => console.log(e)}
+          onClick={e => console.log("selectionList",selectionList)}
           className=""
         >
           Submit
         </div>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
       </header>
     </div>
     );
