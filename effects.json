@@ -15,17 +15,17 @@
         "originalName": "Fortify Illusion"
     },
     {
-        "name": "Obsession for x period",
+        "name": "Ignore pain",
         "complexity": 1,
         "originalName": "Fortify Unarmed"
     },
     {
-        "name": "Charm target x for y period",
+        "name": "Obsession with target",
         "complexity": 2,
         "originalName": "Fortify Barter"
     },
     {
-        "name": "Teleport/move location to x",
+        "name": "Teleport/move location target",
         "complexity": 4,
         "originalName": "Fortify Shouts"
     },
@@ -35,7 +35,7 @@
         "originalName": "Health"
     },
     {
-        "name": "Sadness for x period",
+        "name": "Vomiting",
         "complexity": 1,
         "originalName": "Magicka"
     },
@@ -50,7 +50,7 @@
         "originalName": "Stamina Fortification"
     },
     {
-        "name": "Flip other effects of potion",
+        "name": "Invert other effects of potion",
         "complexity": 3,
         "originalName": "Magicka Fortification"
     },
@@ -72,7 +72,7 @@
     {
         "name": "Gain Sin",
         "complexity": 3,
-        "originalName": "Damage Magicka Regen"
+        "originalName": "Discerning"
     },
     {
         "name": "Damage chaos and demons",
@@ -110,7 +110,7 @@
         "originalName": "Resist Shock"
     },
     {
-        "name": "Transmute to x perminantly",
+        "name": "Make transmutation perminant",
         "complexity": 4,
         "originalName": "Magic Aversion"
     },
@@ -135,7 +135,7 @@
         "originalName": "Fire Damage"
     },
     {
-        "name": "Filling",
+        "name": "Sleepless rest",
         "complexity": 1,
         "originalName": "Frost Damage"
     },
@@ -145,7 +145,7 @@
         "originalName": "Shock Damage"
     },
     {
-        "name": "Sleepless rest",
+        "name": "Deadly poison",
         "complexity": 1,
         "originalName": "Poison Aversion"
     },
@@ -180,7 +180,7 @@
         "originalName": "Hircine's Sight"
     },
     {
-        "name": "Increase stealth",
+        "name": "Make harder to noitce (ie stealth)",
         "complexity": 1,
         "originalName": "Prowling"
     },
@@ -280,7 +280,7 @@
         "originalName": "Stamina"
     },
     {
-        "name": "Regeneration",
+        "name": "Health Regeneration",
         "complexity": 2,
         "originalName": "Health Regeneration"
     },
@@ -300,12 +300,12 @@
         "originalName": "Damage Health Regen"
     },
     {
-        "name": "Disfigure",
+        "name": "Disfigure temporarily (painful)",
         "complexity": 1,
         "originalName": "Lingering Damage Health"
     },
     {
-        "name": "Exhaust",
+        "name": "Heavy limbs",
         "complexity": 1,
         "originalName": "Damage Stamina"
     },
@@ -315,7 +315,7 @@
         "originalName": "Damage Stamina Regen"
     },
     {
-        "name": "Fatigue",
+        "name": "Exhaust",
         "complexity": 1,
         "originalName": "Fatigue"
     },
@@ -325,7 +325,7 @@
         "originalName": "Silence"
     },
     {
-        "name": "Damage Undead",
+        "name": "Damage unliving",
         "complexity": 2,
         "originalName": "Damage Undead"
     },
@@ -345,7 +345,7 @@
         "originalName": "Resist Disease"
     },
     {
-        "name": "Resist Stat changes",
+        "name": "Thicken blood",
         "complexity": 2,
         "originalName": "Cure Poison"
     },
@@ -385,7 +385,7 @@
         "originalName": "Night Eye"
     },
     {
-        "name": "Detect Life",
+        "name": "Detect living things nearby",
         "complexity": 2,
         "originalName": "Detect Life"
     },
@@ -401,7 +401,7 @@
     },
     {
         "name": "Waterbreathing",
-        "complexity": 1,
+        "complexity": 3,
         "originalName": "Waterbreathing"
     },
     {
@@ -415,12 +415,12 @@
         "originalName": "Protect Soul"
     },
     {
-        "name": "Chaotic effect",
+        "name": "Thins the walls of reality (more warp)",
         "complexity": 4,
-        "originalName": "Discerning"
+        "originalName": "Damage Magicka Regen"
     },
     {
-        "name": "Vomiting",
+        "name": "Sadness",
         "complexity": 1,
         "originalName": "Pathfinding"
     },

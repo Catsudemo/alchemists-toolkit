@@ -53,6 +53,10 @@ window.addEventListener("load", e => {
       </div>
     {{/if}}
 
+{{#each effects}}
+    Key: {{@key}} Value = {{this}}
+{{/each}}
+
     {{#unless this.active}}
       <div class="passive effect list">
         Passive effect - {{this.name}}
@@ -80,7 +84,7 @@ window.addEventListener("load", e => {
     {{name}}
     <div class="small">
         {{#each effects}}
-        {{this.name}},
+        {{this.name}} {{#if this.production}}({{this.production}}){{/if}},
         {{/each}}
     </div>
 </div>
@@ -319,7 +323,7 @@ window.addEventListener("load", e => {
             .clone();
 
         PotionMaster.logColour(potion.colour, potion.name);
-
+console.log(potion)
         document.getElementById("output").innerHTML = potionTemplate({
             ...potion
         });

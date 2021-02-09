@@ -2,7 +2,8 @@ var hash = require("object-hash");
 var faker = require("faker");
 var colourMod = require("./ColorGeneratorModule.js");
 
-var originalDataSet = require("./caco-ingredients.json");
+var og = require("./caco-ingredients.json");
+var originalDataSet = JSON.parse(JSON.stringify(og))
 
 var effects = require("./effects.json")
 
@@ -44,7 +45,6 @@ var mixColour = (a, b) => {
 };
 
 
-
 var logColour = (colour, message = "{}{}{Colour message}{}{}") => console.log(`%c ${message} `, `background: ${colourMod.rgbToHex(colour)}; color: #fff`);
 
 var options = {
@@ -71,15 +71,18 @@ var options = {
 //full effect list is too big to keep here
 
 var substanceProperties = [
-    "Acidic",
-    "Basic",
-    "Damaged by acid",
-    "Damaged by base",
+    // "Acidic",
+    // "Basic",
+    // "Damaged by acid",
+    // "Damaged by base",
     "Expires quickly",
-    "Exothermic",
+    // "Exothermic",
     "Thick potion",
     "Thin potion",
-    "Endothermic",
+    "Solid, light and brittle",
+    "Solid, hard and chalky",
+    "Gooey, extremely thick jelly",
+    // "Endothermic",
     "Flamible",
     "Oxadising",
     "Chaotic/mutative",
@@ -261,12 +264,13 @@ class PotionMaster {
     }
 
     findCommonEffects(...ingredientObjects) {
-        // console.log("running findCommonEffects", ingredientObjects.length);
+        console.log("running findCommonEffects", ingredientObjects.length);
 
         var complexity = Math.max(
             ...ingredientObjects.map(i => i.updateComplexity())
         );
 
+        console.log("potion complexity", complexity)
         var effectArray = ingredientObjects
             .map(i => i.effectsAdvanced())
             .flat();
@@ -279,7 +283,6 @@ class PotionMaster {
                 e => e.name === effect.name
             ).length)
         );
-
         //activate effects
         effectArray
             .filter(e => e.count >= this.options.minimumCommonEffects)
@@ -290,20 +293,22 @@ class PotionMaster {
     }
 
     validateEffects(productionModifiers = [], effectArray) {
-        // console.log(
-        //     "running validateEffects",
-        //     "productionModifiers",
-        //     productionModifiers.length,
-        //     "effectArray",
-        //     effectArray.length
-        // );
+
+        console.log(
+            "running validateEffects",
+            "productionModifiers",
+            productionModifiers,
+            "effectArray",
+            effectArray.length
+        );
         // console.log(effectArray)
         var conditions = {
-            hasNoProductionRequirements: e => !e.production,
+            hasNoProductionRequirements: e =>
+                !e.production,
             includesProduction: e =>
                 productionModifiers
                 .map(e => e.toLowerCase())
-                .includes(e.production),
+                .includes(e.production.toLowerCase()),
             usingPhilosophersStone: e =>
                 productionModifiers
                 .map(e => e.toLowerCase())
@@ -311,20 +316,25 @@ class PotionMaster {
         };
         // console.log(effectArray)
 
-        // console.log("effectArray", effectArray);
+        console.log("effectArray", effectArray.map(ew => [ew.name, ew.production]));
 
         //vlidate prodction
         // remove junk
         //keep high level
-        return (
-            effectArray
+        return effectArray
             //filter production mods
+            // .map(e => { console.log("remaing effect", e); return e })
             .filter((e, i, a) =>
                 Object.keys(conditions).some(b => conditions[b](e))
             )
+            // .map(e => {
+            //     console.log("remaing effect", e)
+            //     return e
+            // })
             // console.log(t)
             .filter(e => e.active || e.complexity >= 3)
-        );
+
+
     }
 
     strengthFinder(percent) {
@@ -335,7 +345,7 @@ class PotionMaster {
     }
 
     calculateEffectPotency(effectArray) {
-        // console.log("running calculateEffectPotency", effectArray.length);
+        console.log("running calculateEffectPotency", effectArray.length);
 
         effectArray.forEach(item => {
             delete item.ingredientName;
@@ -369,7 +379,7 @@ class PotionMaster {
     }
 
     finalisePotion(presentEffects, customJunkName = "Junk") {
-        // console.log("running finalisePotion", presentEffects.length);
+        console.log("running finalisePotion", presentEffects.length);
         var potionName = "Precursor Liquid";
         var colour = this.options.precursorColour;
 
@@ -405,10 +415,10 @@ class PotionMaster {
         //find colours
         //awaiting colour mixing function
 
-        console.log(
-            "fuck",
-            activeEffects.map(e => e.colour)
-        );
+        // console.log(
+        //     "fuck",
+        //     activeEffects.map(e => e.colour)
+        // );
 
         var colour = activeEffects
             .map(e => e.colour)
@@ -548,7 +558,7 @@ class PotionMaster {
                         .reduce((a, b) => a + b, 0)
                 }))
             }))
-            .map(i => this.registerComponent(new Component(i.name, i.effects,undefined,undefined, undefined, i.description)));
+            .map(i => this.registerComponent(new Component(i.name, i.effects, undefined, undefined, undefined, i.description)));
         delete this.data.ingredients;
         this.dataHash = hash(this.data)
         // console.log("makeDataSet complete", this.data.components.length);
@@ -559,33 +569,95 @@ class PotionMaster {
 function tests(seed = 1) {
     var pm = new PotionMaster(seed);
 
-    var explosivePotion = ["Beehive Husk", "Ash Creep Cluster"];
+    // var explosivePotion = ["Beehive Husk", "Ash Creep Cluster"];
 
-    var corruptionPotion = ["Nordic Barnacle", "Tinder Polypore Cap"];
+    // var corruptionPotion = ["Nordic Barnacle", "Tinder Polypore Cap"];
+    var waterwalkingPotion = ["Slaughterfish Scales", "Kwama Cuttle", "Bee"];
+    var x = pm.createPotion(['Chill', ], waterwalkingPotion)
+    console.log(x)
 
-    var productionEffects = [
-        "Crushing",
-        "Disolve in water",
-        "philosophers stone"
-    ];
+    // ### section for figuring out if there are effects that are unrepresented in the list
+    // var ef = []
 
-    var components = [
-        pm.createPotion(productionEffects, explosivePotion),
-        pm.createPotion(productionEffects, corruptionPotion)
-    ];
+    // pm.data.components
+    //     .map(i => {
 
-    // console.log(components[0], components[1]);
+    //         i.effects.forEach(e => {
+    //             // if (!ef[e.name]) ef[e.name] = 0
+    //             var dis = ef.find(qe => qe.name == e.name)
+    //             if (dis) {
+    //                 dis.count += 1
+    //             } else {
+    //                 ef.push({
+    //                     // ...e,
+    //                     name: e.name,
+    //                     count: 1,
+    //                     complexity: e.complexity
+    //                     // magnitude: e.magnitude
+    //                 })
+    //             }
+    //             // ef[e.name] += 1
+    //         })
+    //     })
 
-    // console.log(pm.data.components.reverse().slice(0,3))
 
-    var invis = pm.createPotion(productionEffects, components);
 
-    return pm.createPotion(productionEffects, [invis, invis]);
+    // // ### section for calculating just how much of each effect there needs to be for it to be even brewable
+    // var we = ef
+    // var rw = we
+    //     .map(e => ({ ...e, diff: e.complexity * 1.5 - e.count, desiredTotal: e.complexity * 1.5 }))
+    //     // .filter(e => e.diff > 3)
+    //     .sort((a, b) => parseFloat(a.diff) - parseFloat(b.diff))
+    //     // .sort((a, b) => parseFloat(b.diff) - parseFloat(a.diff))
+    // var t = 0
+    // var update = []
+
+    // rw.forEach(e => {
+    //     console.log(e.diff, )
+    //     Array.from(new Array(Math.ceil(e.diff)))
+    //         .forEach(() => update.push(e.originalName + " - "+ e.name))
+    // })
+
+    // console.log(t)
+    // console.log(rw)
+    // console.log(update)
+
+
+
+    // var productionEffects = productionRequirements.filter(e=>!e == "philosophers stone")
+    // var components = [
+    //     pm.createPotion(productionEffects, explosivePotion),
+    //     pm.createPotion(productionEffects, corruptionPotion)
+    // ];
+
+    // console.log("components[0]", components[0] )
+
+
+    //     console.log("components[1]", components[1])
+
+    // // console.log(pm.data.components.reverse().slice(0,3))
+
+    // var invis = pm.createPotion(productionEffects, components);
+
+    // return pm.createPotion(productionEffects, [invis, invis]);
 }
 
+// tests()
+// console.log(x)
+
+// var x = require('fs').readFileSync("rename-ingredients.json")
+// x = JSON.parse(x)
+// x = x.sort(function(a, b) {
+//     if (a.name < b.name) { return -1; }
+//     if (a.name > b.name) { return 1; }
+//     return 0;
+// })
+
+// console.log(x)
+
+// require('fs').writeFileSync("rename-ingredients.json", JSON.stringify(x, null, 2))
 
 
-require('fs').writeFileSync("rename-ingredients.json",JSON.stringify( originalDataSet.ingredients.map(e=>({name:e.name, description:"No desc needed"})), null, 2))
 
 // var t1 = generateColour();
 

@@ -212,7 +212,7 @@ module.exports={
         "description": "vanilla",
         "effects": [
         {
-            "name": "Fortify Destruction",
+            "name": "Resist Disease",
             "magnitude": 2.8
         },
         {
@@ -661,7 +661,7 @@ module.exports={
             "magnitude": 3.36
         },
         {
-            "name": "Damage Magicka Regen",
+            "name": "Protect Soul",
             "magnitude": 4.02
         },
         {
@@ -968,7 +968,7 @@ module.exports={
         "description": "vanilla",
         "effects": [
         {
-            "name": "Damage Magicka Regen",
+            "name": "Protect Soul",
             "magnitude": 2.51
         },
         {
@@ -1060,7 +1060,7 @@ module.exports={
             "magnitude": 2.08
         },
         {
-            "name": "Ravage Health",
+            "name": "Hircine's Sight",
             "magnitude": 2.78
         },
         {
@@ -1715,7 +1715,7 @@ module.exports={
             "magnitude": 13.88
         },
         {
-            "name": "Damage Magicka Regen",
+            "name": "Protect Soul",
             "magnitude": 3.85
         }]
     },
@@ -2030,7 +2030,7 @@ module.exports={
             "magnitude": 4.63
         },
         {
-            "name": "Ravage Health",
+            "name": "Hircine's Sight",
             "magnitude": 2.43
         }]
     },
@@ -2102,7 +2102,7 @@ module.exports={
         "description": "caco",
         "effects": [
         {
-            "name": "Resist Disease",
+            "name": "Fortify Destruction",
             "magnitude": 1998.0
         },
         {
@@ -2358,7 +2358,7 @@ module.exports={
             "magnitude": 4.69
         },
         {
-            "name": "Ravage Health",
+            "name": "Detect Life Potion - Exterior",
             "magnitude": 9.04
         },
         {
@@ -2816,7 +2816,7 @@ module.exports={
         "description": "vanilla",
         "effects": [
         {
-            "name": "Damage Magicka Regen",
+            "name": "Protect Soul",
             "magnitude": 5.03
         },
         {
@@ -3072,7 +3072,7 @@ module.exports={
             "magnitude": 70.0
         },
         {
-            "name": "Ravage Health",
+            "name": "Detect Life Potion - Exterior",
             "magnitude": 10.43
         },
         {
@@ -3853,11 +3853,11 @@ module.exports={
             "magnitude": 2.91
         },
         {
-            "name": "Damage Magicka Regen",
+            "name": "Light",
             "magnitude": 1.68
         },
         {
-            "name": "Damage Stamina Regen",
+            "name": "Detect Life Potion - Exterior",
             "magnitude": 1.34
         }]
     },
@@ -4118,7 +4118,7 @@ module.exports={
         "description": "caco",
         "effects": [
         {
-            "name": "Damage Stamina Regen",
+            "name": "Shield",
             "magnitude": 2.68
         },
         {
@@ -4231,7 +4231,7 @@ module.exports={
             "magnitude": 4.15
         },
         {
-            "name": "Damage Magicka Regen",
+            "name": "Light",
             "magnitude": 3.02
         },
         {
@@ -4819,7 +4819,7 @@ module.exports={
             "magnitude": 8.33
         },
         {
-            "name": "Damage Stamina Regen",
+            "name": "Fortify Barter",
             "magnitude": 3.02
         },
         {
@@ -4844,7 +4844,7 @@ module.exports={
             "magnitude": 3.35
         },
         {
-            "name": "Damage Stamina Regen",
+            "name": "Fortify Barter",
             "magnitude": 3.35
         }]
     },
@@ -5004,7 +5004,7 @@ module.exports={
             "magnitude": 5.53
         },
         {
-            "name": "Damage Stamina Regen",
+            "name": "Hunter's Boon",
             "magnitude": 3.35
         },
         {
@@ -6394,7 +6394,7 @@ module.exports={
             "magnitude": 1.0
         },
         {
-            "name": "Stamina",
+            "name": "Fortify Shouts",
             "magnitude": 9.25
         },
         {
@@ -6419,7 +6419,7 @@ module.exports={
             "magnitude": 10.0
         },
         {
-            "name": "Damage Stamina Regen",
+            "name": "Hunter's Boon",
             "magnitude": 3.02
         }]
     },
@@ -6722,11 +6722,11 @@ module.exports={
         "description": "cyrodiil",
         "effects": [
         {
-            "name": "Stamina",
+            "name": "Fortify Shouts",
             "magnitude": 5.0
         },
         {
-            "name": "Damage Stamina Regen",
+            "name": "Hunter's Boon",
             "magnitude": 5.0
         },
         {
@@ -6953,7 +6953,7 @@ module.exports={
         "description": "cyrodiil",
         "effects": [
         {
-            "name": "Stamina",
+            "name": "Fortify Shouts",
             "magnitude": 10.18
         },
         {
@@ -7037,7 +7037,7 @@ module.exports={
         "description": "cyrodiil",
         "effects": [
         {
-            "name": "Stamina",
+            "name": "Fortify Shouts",
             "magnitude": 10.18
         },
         {
@@ -7566,7 +7566,7 @@ module.exports={
             "magnitude": 57.0
         },
         {
-            "name": "Damage Magicka Regen",
+            "name": "Light",
             "magnitude": 3.9
         },
         {
@@ -7826,7 +7826,7 @@ module.exports={
             "magnitude": 10.0
         },
         {
-            "name": "Stamina",
+            "name": "Fortify Shouts",
             "magnitude": 8.0
         }]
     },
@@ -7969,7 +7969,7 @@ module.exports={
             "magnitude": 5.5
         },
         {
-            "name": "Stamina",
+            "name": "Shield",
             "magnitude": 7.0
         },
         {
@@ -8154,7 +8154,7 @@ module.exports={
             "magnitude": 3.5
         },
         {
-            "name": "Ravage Health",
+            "name": "Light",
             "magnitude": 7.6
         },
         {
@@ -8183,7 +8183,7 @@ module.exports={
             "magnitude": 6.94
         },
         {
-            "name": "Ravage Health",
+            "name": "Hircine's Sight",
             "magnitude": 7.65
         }]
     },
@@ -8437,17 +8437,17 @@ module.exports=
         "originalName": "Fortify Illusion"
     },
     {
-        "name": "Obsession for x period",
+        "name": "Ignore pain",
         "complexity": 1,
         "originalName": "Fortify Unarmed"
     },
     {
-        "name": "Charm target x for y period",
+        "name": "Obsession with target",
         "complexity": 2,
         "originalName": "Fortify Barter"
     },
     {
-        "name": "Teleport/move location to x",
+        "name": "Teleport/move location target",
         "complexity": 4,
         "originalName": "Fortify Shouts"
     },
@@ -8457,7 +8457,7 @@ module.exports=
         "originalName": "Health"
     },
     {
-        "name": "Sadness for x period",
+        "name": "Vomiting",
         "complexity": 1,
         "originalName": "Magicka"
     },
@@ -8472,7 +8472,7 @@ module.exports=
         "originalName": "Stamina Fortification"
     },
     {
-        "name": "Flip other effects of potion",
+        "name": "Invert other effects of potion",
         "complexity": 3,
         "originalName": "Magicka Fortification"
     },
@@ -8494,7 +8494,7 @@ module.exports=
     {
         "name": "Gain Sin",
         "complexity": 3,
-        "originalName": "Damage Magicka Regen"
+        "originalName": "Discerning"
     },
     {
         "name": "Damage chaos and demons",
@@ -8532,7 +8532,7 @@ module.exports=
         "originalName": "Resist Shock"
     },
     {
-        "name": "Transmute to x perminantly",
+        "name": "Make transmutation perminant",
         "complexity": 4,
         "originalName": "Magic Aversion"
     },
@@ -8557,7 +8557,7 @@ module.exports=
         "originalName": "Fire Damage"
     },
     {
-        "name": "Filling",
+        "name": "Sleepless rest",
         "complexity": 1,
         "originalName": "Frost Damage"
     },
@@ -8567,7 +8567,7 @@ module.exports=
         "originalName": "Shock Damage"
     },
     {
-        "name": "Sleepless rest",
+        "name": "Deadly poison",
         "complexity": 1,
         "originalName": "Poison Aversion"
     },
@@ -8602,7 +8602,7 @@ module.exports=
         "originalName": "Hircine's Sight"
     },
     {
-        "name": "Increase stealth",
+        "name": "Make harder to noitce (ie stealth)",
         "complexity": 1,
         "originalName": "Prowling"
     },
@@ -8702,7 +8702,7 @@ module.exports=
         "originalName": "Stamina"
     },
     {
-        "name": "Regeneration",
+        "name": "Health Regeneration",
         "complexity": 2,
         "originalName": "Health Regeneration"
     },
@@ -8722,12 +8722,12 @@ module.exports=
         "originalName": "Damage Health Regen"
     },
     {
-        "name": "Disfigure",
+        "name": "Disfigure temporarily (painful)",
         "complexity": 1,
         "originalName": "Lingering Damage Health"
     },
     {
-        "name": "Exhaust",
+        "name": "Heavy limbs",
         "complexity": 1,
         "originalName": "Damage Stamina"
     },
@@ -8737,7 +8737,7 @@ module.exports=
         "originalName": "Damage Stamina Regen"
     },
     {
-        "name": "Fatigue",
+        "name": "Exhaust",
         "complexity": 1,
         "originalName": "Fatigue"
     },
@@ -8747,7 +8747,7 @@ module.exports=
         "originalName": "Silence"
     },
     {
-        "name": "Damage Undead",
+        "name": "Damage unliving",
         "complexity": 2,
         "originalName": "Damage Undead"
     },
@@ -8767,7 +8767,7 @@ module.exports=
         "originalName": "Resist Disease"
     },
     {
-        "name": "Resist Stat changes",
+        "name": "Thicken blood",
         "complexity": 2,
         "originalName": "Cure Poison"
     },
@@ -8807,7 +8807,7 @@ module.exports=
         "originalName": "Night Eye"
     },
     {
-        "name": "Detect Life",
+        "name": "Detect living things nearby",
         "complexity": 2,
         "originalName": "Detect Life"
     },
@@ -8823,7 +8823,7 @@ module.exports=
     },
     {
         "name": "Waterbreathing",
-        "complexity": 1,
+        "complexity": 3,
         "originalName": "Waterbreathing"
     },
     {
@@ -8837,12 +8837,12 @@ module.exports=
         "originalName": "Protect Soul"
     },
     {
-        "name": "Chaotic effect",
+        "name": "Thins the walls of reality (more warp)",
         "complexity": 4,
-        "originalName": "Discerning"
+        "originalName": "Damage Magicka Regen"
     },
     {
-        "name": "Vomiting",
+        "name": "Sadness",
         "complexity": 1,
         "originalName": "Pathfinding"
     },
@@ -8856,7 +8856,7 @@ module.exports=
         "complexity": 1,
         "originalName": "Muddle"
     }
-];
+]
 },{}],4:[function(require,module,exports){
 window.addEventListener("load", e => {
     var params = Object.fromEntries(
@@ -8913,6 +8913,10 @@ window.addEventListener("load", e => {
       </div>
     {{/if}}
 
+{{#each effects}}
+    Key: {{@key}} Value = {{this}}
+{{/each}}
+
     {{#unless this.active}}
       <div class="passive effect list">
         Passive effect - {{this.name}}
@@ -8940,7 +8944,7 @@ window.addEventListener("load", e => {
     {{name}}
     <div class="small">
         {{#each effects}}
-        {{this.name}},
+        {{this.name}} {{#if this.production}}({{this.production}}){{/if}},
         {{/each}}
     </div>
 </div>
@@ -9179,7 +9183,7 @@ window.addEventListener("load", e => {
             .clone();
 
         PotionMaster.logColour(potion.colour, potion.name);
-
+console.log(potion)
         document.getElementById("output").innerHTML = potionTemplate({
             ...potion
         });
@@ -82876,7 +82880,8 @@ var hash = require("object-hash");
 var faker = require("faker");
 var colourMod = require("./ColorGeneratorModule.js");
 
-var originalDataSet = require("./caco-ingredients.json");
+var og = require("./caco-ingredients.json");
+var originalDataSet = JSON.parse(JSON.stringify(og))
 
 var effects = require("./effects.json")
 
@@ -82918,7 +82923,6 @@ var mixColour = (a, b) => {
 };
 
 
-
 var logColour = (colour, message = "{}{}{Colour message}{}{}") => console.log(`%c ${message} `, `background: ${colourMod.rgbToHex(colour)}; color: #fff`);
 
 var options = {
@@ -82945,15 +82949,18 @@ var options = {
 //full effect list is too big to keep here
 
 var substanceProperties = [
-    "Acidic",
-    "Basic",
-    "Damaged by acid",
-    "Damaged by base",
+    // "Acidic",
+    // "Basic",
+    // "Damaged by acid",
+    // "Damaged by base",
     "Expires quickly",
-    "Exothermic",
+    // "Exothermic",
     "Thick potion",
     "Thin potion",
-    "Endothermic",
+    "Solid, light and brittle",
+    "Solid, hard and chalky",
+    "Gooey, extremely thick jelly",
+    // "Endothermic",
     "Flamible",
     "Oxadising",
     "Chaotic/mutative",
@@ -83135,12 +83142,13 @@ class PotionMaster {
     }
 
     findCommonEffects(...ingredientObjects) {
-        // console.log("running findCommonEffects", ingredientObjects.length);
+        console.log("running findCommonEffects", ingredientObjects.length);
 
         var complexity = Math.max(
             ...ingredientObjects.map(i => i.updateComplexity())
         );
 
+        console.log("potion complexity", complexity)
         var effectArray = ingredientObjects
             .map(i => i.effectsAdvanced())
             .flat();
@@ -83153,7 +83161,6 @@ class PotionMaster {
                 e => e.name === effect.name
             ).length)
         );
-
         //activate effects
         effectArray
             .filter(e => e.count >= this.options.minimumCommonEffects)
@@ -83164,20 +83171,22 @@ class PotionMaster {
     }
 
     validateEffects(productionModifiers = [], effectArray) {
-        // console.log(
-        //     "running validateEffects",
-        //     "productionModifiers",
-        //     productionModifiers.length,
-        //     "effectArray",
-        //     effectArray.length
-        // );
+
+        console.log(
+            "running validateEffects",
+            "productionModifiers",
+            productionModifiers,
+            "effectArray",
+            effectArray.length
+        );
         // console.log(effectArray)
         var conditions = {
-            hasNoProductionRequirements: e => !e.production,
+            hasNoProductionRequirements: e =>
+                !e.production,
             includesProduction: e =>
                 productionModifiers
                 .map(e => e.toLowerCase())
-                .includes(e.production),
+                .includes(e.production.toLowerCase()),
             usingPhilosophersStone: e =>
                 productionModifiers
                 .map(e => e.toLowerCase())
@@ -83185,20 +83194,25 @@ class PotionMaster {
         };
         // console.log(effectArray)
 
-        // console.log("effectArray", effectArray);
+        console.log("effectArray", effectArray.map(ew => [ew.name, ew.production]));
 
         //vlidate prodction
         // remove junk
         //keep high level
-        return (
-            effectArray
+        return effectArray
             //filter production mods
+            // .map(e => { console.log("remaing effect", e); return e })
             .filter((e, i, a) =>
                 Object.keys(conditions).some(b => conditions[b](e))
             )
+            // .map(e => {
+            //     console.log("remaing effect", e)
+            //     return e
+            // })
             // console.log(t)
             .filter(e => e.active || e.complexity >= 3)
-        );
+
+
     }
 
     strengthFinder(percent) {
@@ -83209,7 +83223,7 @@ class PotionMaster {
     }
 
     calculateEffectPotency(effectArray) {
-        // console.log("running calculateEffectPotency", effectArray.length);
+        console.log("running calculateEffectPotency", effectArray.length);
 
         effectArray.forEach(item => {
             delete item.ingredientName;
@@ -83243,7 +83257,7 @@ class PotionMaster {
     }
 
     finalisePotion(presentEffects, customJunkName = "Junk") {
-        // console.log("running finalisePotion", presentEffects.length);
+        console.log("running finalisePotion", presentEffects.length);
         var potionName = "Precursor Liquid";
         var colour = this.options.precursorColour;
 
@@ -83279,10 +83293,10 @@ class PotionMaster {
         //find colours
         //awaiting colour mixing function
 
-        console.log(
-            "fuck",
-            activeEffects.map(e => e.colour)
-        );
+        // console.log(
+        //     "fuck",
+        //     activeEffects.map(e => e.colour)
+        // );
 
         var colour = activeEffects
             .map(e => e.colour)
@@ -83422,7 +83436,7 @@ class PotionMaster {
                         .reduce((a, b) => a + b, 0)
                 }))
             }))
-            .map(i => this.registerComponent(new Component(i.name, i.effects,undefined,undefined, undefined, i.description)));
+            .map(i => this.registerComponent(new Component(i.name, i.effects, undefined, undefined, undefined, i.description)));
         delete this.data.ingredients;
         this.dataHash = hash(this.data)
         // console.log("makeDataSet complete", this.data.components.length);
@@ -83433,31 +83447,98 @@ class PotionMaster {
 function tests(seed = 1) {
     var pm = new PotionMaster(seed);
 
-    var explosivePotion = ["Beehive Husk", "Ash Creep Cluster"];
+    // var explosivePotion = ["Beehive Husk", "Ash Creep Cluster"];
 
-    var corruptionPotion = ["Nordic Barnacle", "Tinder Polypore Cap"];
+    // var corruptionPotion = ["Nordic Barnacle", "Tinder Polypore Cap"];
+    var waterwalkingPotion = ["Slaughterfish Scales", "Kwama Cuttle", "Bee"];
+    var x = pm.createPotion(['Chill', ], waterwalkingPotion)
+    console.log(x)
 
-    var productionEffects = [
-        "Crushing",
-        "Disolve in water",
-        "philosophers stone"
-    ];
+    // ### section for figuring out if there are effects that are unrepresented in the list
+    // var ef = []
 
-    var components = [
-        pm.createPotion(productionEffects, explosivePotion),
-        pm.createPotion(productionEffects, corruptionPotion)
-    ];
+    // pm.data.components
+    //     .map(i => {
 
-    // console.log(components[0], components[1]);
+    //         i.effects.forEach(e => {
+    //             // if (!ef[e.name]) ef[e.name] = 0
+    //             var dis = ef.find(qe => qe.name == e.name)
+    //             if (dis) {
+    //                 dis.count += 1
+    //             } else {
+    //                 ef.push({
+    //                     // ...e,
+    //                     name: e.name,
+    //                     count: 1,
+    //                     complexity: e.complexity
+    //                     // magnitude: e.magnitude
+    //                 })
+    //             }
+    //             // ef[e.name] += 1
+    //         })
+    //     })
 
-    // console.log(pm.data.components.reverse().slice(0,3))
 
-    var invis = pm.createPotion(productionEffects, components);
 
-    return pm.createPotion(productionEffects, [invis, invis]);
+    // // ### section for calculating just how much of each effect there needs to be for it to be even brewable
+    // var we = ef
+    // var rw = we
+    //     .map(e => ({ ...e, diff: e.complexity * 1.5 - e.count, desiredTotal: e.complexity * 1.5 }))
+    //     // .filter(e => e.diff > 3)
+    //     .sort((a, b) => parseFloat(a.diff) - parseFloat(b.diff))
+    //     // .sort((a, b) => parseFloat(b.diff) - parseFloat(a.diff))
+    // var t = 0
+    // var update = []
+
+    // rw.forEach(e => {
+    //     console.log(e.diff, )
+    //     Array.from(new Array(Math.ceil(e.diff)))
+    //         .forEach(() => update.push(e.originalName + " - "+ e.name))
+    // })
+
+    // console.log(t)
+    // console.log(rw)
+    // console.log(update)
+
+
+
+    // var productionEffects = productionRequirements.filter(e=>!e == "philosophers stone")
+    // var components = [
+    //     pm.createPotion(productionEffects, explosivePotion),
+    //     pm.createPotion(productionEffects, corruptionPotion)
+    // ];
+
+    // console.log("components[0]", components[0] )
+
+
+    //     console.log("components[1]", components[1])
+
+    // // console.log(pm.data.components.reverse().slice(0,3))
+
+    // var invis = pm.createPotion(productionEffects, components);
+
+    // return pm.createPotion(productionEffects, [invis, invis]);
 }
 
-var t1 = generateColour();
+// tests()
+// console.log(x)
+
+// var x = require('fs').readFileSync("rename-ingredients.json")
+// x = JSON.parse(x)
+// x = x.sort(function(a, b) {
+//     if (a.name < b.name) { return -1; }
+//     if (a.name > b.name) { return 1; }
+//     return 0;
+// })
+
+// console.log(x)
+
+// require('fs').writeFileSync("rename-ingredients.json", JSON.stringify(x, null, 2))
+
+
+
+// var t1 = generateColour();
+
 // var t2 = generateColour()
 // console.log("rgbToHexrgbToHexrgbToHexrgbToHex", )
 
